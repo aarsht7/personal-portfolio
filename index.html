@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLBN7KTKZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
   
-    gtag('config', 'G-RRLBN7KTKZ');
-  </script>
-  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLBN7KTKZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RRLBN7KTKZ');
+</script> 
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +53,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar">
-          <img src="./assets/images/my-avatars/6.gif" id="randimg" alt="Aarsh Thakker" width="120">
+          <img src="" id="randimg" alt="Aarsh Thakker" width="120">
         </figure>
 
         <div class="info-content">
@@ -141,11 +142,11 @@
             </a>
           </li>
 
-          <li class="social-item">
+          <!--<li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
-          </li>
+          </li>-->
 
           
 
@@ -213,17 +214,20 @@
 
         <section class="about-text">
           <p>
-            I have developed expertise in robotics, focusing on both software and hardware. 
-            My understanding of robot mechanics and control has grown through research and 
-            development work. Designing and integrating robotic architectures, sensors, and 
-            actuators are part of my skill set. I am currently learning micro-ros and RTOS.
+          I’ve cultivated skills in both software and hardware in the field of robotics, 
+          complementing my software development experience with a strong understanding of
+          underlying hardware.
+
           </p>
 
           <p>
-            My approach involves a multidisciplinary perspective, enabling me to handle complex 
-            systems like drones, mobile robots, and robotic arms. Continuously seeking new 
-            robotics technologies, I thrive in a dynamic, multicultural startup environment. 
-            It allows me to expand my professional competence and cultural awareness.
+            Specializing in a software-centric approach to robotic systems, I have hands-on
+            experience designing and implementing architectures, integrating sensors and actuators.
+            This multidisciplinary background equips me to contribute effectively to
+            diverse software systems for applications like drones, mobile robots, and robotic
+            arms. My commitment to advancing software aligns seamlessly with innovative
+            and sustainable solutions, and thriving in dynamic, multicultural team environments
+            continually broadens my professional competencies and cultural horizons.
           </p>
 
         </section>
@@ -265,7 +269,7 @@
                 <h4 class="h4 service-item-title">Simulation tools</h4>
 
                 <p class="service-item-text">
-                  Creating software in loop simulation for robots
+                  Creating simulations for various robots
                 </p>
               </div>
 
@@ -297,7 +301,7 @@
                 <h4 class="h4 service-item-title">Software dev</h4>
 
                 <p class="service-item-text">
-                  Creating high-quality softwares and gui's to use in parallel with robot drivers
+                  Creating high-quality softwares and gui's to use in parallel with robot drivers, simulations and on the actual robots
                 </p>
               </div>
 
@@ -529,12 +533,12 @@
 
               <h4 class="h4 timeline-item-title">Freelancer</h4>
 
-              <span>2020 — 2022</span>
+              <span>2020 — Present</span>
               <a class="gold-text">Top rated freelancer</a>
               <p class="timeline-text">
                 Leading member of the design team for a robotic coffee kiosk, 
                 Member of the team designing the robot system for the nuclear waste site,
-                Member of the team working on the humanoid robot talos- 
+                Member of the team working on the humanoid simulation of robot talos- 
                 designed to mimic humans, And many other projects
               </p>
 
@@ -651,7 +655,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">ROS | Python | Linux | Bash</h5>
+                <h5 class="h5">ROS | C++ | Python | Linux | Bash | Git</h5>
                 <data value="85"></data>
               </div>
 
@@ -664,7 +668,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">C++ | MATLAB | Git | Gazebo | LaTeX</h5>
+                <h5 class="h5">Docker | Windows (PS / cmd) | Gazebo | LaTeX</h5>
                 <data value="75"></data>
               </div>
 
@@ -677,7 +681,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">ROS 2 | Docker | vscode | CI-CD </h5>
+                <h5 class="h5">ROS 2 | vscode | CI-CD </h5>
                 <data value="65"></data>
               </div>
 
@@ -690,8 +694,8 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">RaspberryPi | Arduino | unit testing</h5>
-                <data value="55"></data>
+                <h5 class="h5">RaspberryPi | Arduino | unit testing | CAD software (Siemens-NX, CATIA-vr5) </h5>
+                <data value="45"></data>
               </div>
 
               <div class="skill-progress-bg">
@@ -785,6 +789,26 @@
             <!--
               PROJECTS
             -->
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <!--<div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>-->
+
+                  <img src="./assets/images/docker-w-py.png" alt="docker-w-py" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Docker based simulation tool for Windows (not opensource yet) </h3>
+                <p class="gold-text-small">&ensp;&nbsp; Docker | Python | ROS 1/2 | Windows</p>
+                <p class="project-category"> &emsp; Simulation tool (excecutable) that runs on docker, python and ROS on backend on windows </p>
+
+                
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="projects">
               <a href="https://github.com/MOCAP4ROS2-Project">
 
@@ -827,9 +851,9 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <!--<div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  </div>-->
 
                   <img src="./assets/images/kuka-youbot.png" alt="youbot-ros-driver" loading="lazy">
                 </figure>
@@ -844,9 +868,9 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <!--<div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  </div>-->
 
                   <img src="./assets/images/pyqt.png" alt="qt-app" loading="lazy">
                 </figure>
@@ -862,9 +886,9 @@
               <a href="https://github.com/aarsht7/ros-ros2-ws-management">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <!--<div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  </div>-->
 
                   <img src="./assets/images/bash-ros.png" alt="bash-ros" loading="lazy">
                 </figure>
@@ -884,10 +908,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2022 </p>
                   </div>
 
-                  <img src="" alt="Image yet to update" loading="lazy">
+                  <img src="./assets/images/robocafe.png" alt="Image yet to update" loading="lazy">
                 </figure>
 
                 <h3 class="project-title"> Robotic Coffee Kiosk</h3>
@@ -902,10 +927,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2022 </p>
                   </div>
 
-                  <img src="" alt="Image yet to update" loading="lazy">
+                  <img src="./assets/images/Quad.jpg" alt="Quad Platform" loading="lazy">
                 </figure>
 
                 <h3 class="project-title"> Autonomous steering control</h3>
@@ -921,10 +947,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2021-22 </p>
                   </div>
 
-                  <img src="" alt="Image yet to update" loading="lazy">
+                  <img src="./assets/images/2ur.png" alt="2 UR on crane" loading="lazy">
                 </figure>
 
                 <h3 class="project-title"> Multi-Cobot stsyem for nuclear site</h3>
@@ -932,6 +959,84 @@
                   Project from &#127468;&#127463;</p>
                 <p class="project-category"> &emsp; Work on automatic steering control for the Brownie Quad platform,
                   merging several perception sensors </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing/consultation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2021-22 </p>
+                  </div>
+
+                  <img src="./assets/images/talos.png" alt="Talos Gz" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Talos sim tools with Docker</h3>
+                <p class="gold-text-small">&ensp;&nbsp; ROS | Humanoid robot | Talos | Docker | Project from Canada &#127464;&#127462;</p>
+                <p class="project-category"> &emsp; Talos humanoid simulation to imitate human movement in the gazebo
+                  simulation using docker based approach </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing/consultation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2021 </p>
+                  </div>
+
+                  <img src="./assets/images/rwt.png" alt="Talos Gz" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Teleop TB3 Using web UI </h3>
+                <p class="gold-text-small">&ensp;&nbsp; ROS | Robot web tools | teleoperation | Project from New-Zealand &#127475;&#127487;</p>
+                <p class="project-category"> &emsp; Project that allows the client to map the environment and navigate
+                  the turtlebot3 burger remotely via the web and android phones </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="teaching activities">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> 2022-Present </p>
+                  </div>
+
+                  <img src="./assets/images/CS.webp" alt="CS" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Course work </h3>
+                <p class="gold-text-small">&ensp;&nbsp; Control architecture of complex systeme | Dynamic multi-agent sys-
+                  tem &#127467;&#127479;</p>
+                <p class="project-category"> &emsp; TP (Practical/Lab) sessions at CentraleSupélec with drones and
+                  turtlebot robots, where students acquired the fundamental knowledge of control theory in multi-robot systems </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="teaching activities">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <!--<ion-icon name="eye-outline"></ion-icon>-->
+                    <p> Continuously </p>
+                  </div>
+
+                  <img src="./assets/images/socialwork.jpg" alt="CS" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Social Contributions</h3>
+                <p class="gold-text-small">&ensp;&nbsp; Inspiring kids | Empowering STEM with robotics </p>
+                <p class="project-category"> &emsp; Arranging visits in the Flight arena of CentraleSupélec, visiting
+                  schools with robots, Open days, Science fests, small internships of
+                  1 week at Flight arena for teens </p>
               </a>
             </li>
 
