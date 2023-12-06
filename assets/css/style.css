@@ -771,6 +771,11 @@ main {
 .lang-item img:hover { transform: scale(1.5); }
 
 
+.hobby-item {
+  min-width: 30%;
+  scroll-snap-align: start;
+}
+
 
 
 /*-----------------------------------*\
