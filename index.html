@@ -13,6 +13,35 @@
   gtag('config', 'G-RRLBN7KTKZ');
 </script> 
 
+<script>
+  function roundNumber(num, decimalPlaces) {
+      const factor = Math.pow(10, decimalPlaces);
+      return Math.round(num * factor) / factor;
+  }
+
+  function getCurrentDateTime() {
+      const now = new Date();
+      return {
+          time: now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }),
+          hour: now.getHours(),
+          year: now.getFullYear(),
+          month: now.getMonth() + 1 // Months are 0-based
+      };
+  }
+
+  function loadElem() {
+      const dateTime = getCurrentDateTime();
+      document.getElementById('currentHH').innerText = dateTime.hour;
+      document.getElementById('currentEXP').innerText = `${roundNumber((dateTime.year - 2020) + (dateTime.month - 4) / 12, 1)} years`;
+  }
+
+  // Initial call to display immediately on load
+  window.onload = function() {
+      loadElem(); // Display immediately
+      setInterval(loadElem, 60000); // Update every minute
+  };
+</script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +116,7 @@
               <a href="mailto:athakker10+portfoliosite@gmail.com" class="contact-link">Send an Email</a>
             </div>
 
-          </li>
+          <!-- </li>
 
           <li class="contact-item">
 
@@ -101,7 +130,19 @@
               <time datetime="1982-06-23">July 18, 1998</time>
             </div>
 
-          </li>
+          </li> -->
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Experience</p>
+
+              <p class="contact-link" id="currentEXP"></p>
+            </div>
+          </li> -->
 
           <li class="contact-item">
 
@@ -548,6 +589,70 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ROS 1/2 | C++ | Python | Linux | Bash | Git</h5>
+                <data value="85"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Docker | Windows (PS / cmd) | Gazebo | LaTeX</h5>
+                <data value="75"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"> vscode | CI-CD </h5>
+                <data value="65"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">RaspberryPi | Arduino | unit testing | CAD software (Siemens-NX, CATIA-vr5) </h5>
+                <data value="45"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <br>
+
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -566,7 +671,7 @@
               <span>2022 — Present</span>
               <a href="https://l2s.centralesupelec.fr/en/" class="gold-text">L2S - Laboratoire des signaux et systèmes</a>
               <p class="timeline-text">
-                Software development, Hands on with robots and hardware, Mobile robots, 
+                Software development and management, Hands on with robots and hardware, Mobile robots, 
                 Drones, Robot arm, Multi robot system, Driver development, Teaching activities
               </p>
 
@@ -582,7 +687,7 @@
                 Leading member of the design team for a robotic coffee kiosk, 
                 Member of the team designing the robot system for the nuclear waste site,
                 Member of the team working on the humanoid simulation of robot talos- 
-                designed to mimic humans, And many other projects
+                designed to mimic humans, And many more . . .
               </p>
 
             </li>
@@ -686,68 +791,6 @@
 
 
           </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ROS | C++ | Python | Linux | Bash | Git</h5>
-                <data value="85"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Docker | Windows (PS / cmd) | Gazebo | LaTeX</h5>
-                <data value="75"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ROS 2 | vscode | CI-CD </h5>
-                <data value="65"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">RaspberryPi | Arduino | unit testing | CAD software (Siemens-NX, CATIA-vr5) </h5>
-                <data value="45"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
 
         </section>
 
@@ -1169,7 +1212,7 @@
   <script src="./assets/js/script.js"></script>
   
   <script type="text/javascript">
-    var num = Math.floor(Math.random() * 10 + 1 ); 
+    var num = Math.floor(Math.random() * 20) + 1;
     randomimage = "./assets/images/my-avatars/" +num +".gif";
     document.getElementById('randimg').src=randomimage;
   </script>
